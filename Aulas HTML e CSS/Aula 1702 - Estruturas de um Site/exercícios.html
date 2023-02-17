@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/212d6e1b54.js" crossorigin="anonymous"></script>
+	<title>Página de Contato</title>
+</head>
+<body>
+<!-- Atividade Prática de HTML: Criando uma Página de Contato
+Nesta atividade prática de HTML, iremos criar uma página de contato com títulos, parágrafos, lista, tabela e formulário.
+
+Objetivo: Criar uma página de contato com uma lista de informações da empresa, formulário de contato e uma tabela com informações de contato. Siga o modelo em anexo.-->
+	<header>
+        <div class="logo">
+            <img src="#" alt="logo" />
+        </div>
+        <br>
+		<span style="font-size: 32px;"><i class="fa-solid fa-business-time"> Minha Empresa</i></span>
+		<nav class="navbar">
+			<!-- Adicione aqui o sua lista -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contatos</a></li>
+                <li><a href="#products">Menu</a></li>
+            </ul>
+		</nav>
+        
+        <!-- Menu Responsivo -->
+        
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+
+	</header>
+
+	<main>
+        <div class="banner" id="#home">
+            <img src="#" alt="banner" />
+        </div>
+
+        <section class="products" id="products">
+            <div class="menu-principal">
+                <h3>Nossos produtos</h3>
+            </div>
+
+            <div class="all-products">
+                <arcticle class="product-card">
+                    <img src="#" alt="Item 1">
+                    <h3>Item 1</h4>
+                    <h4><b>R$ 46,90</b></h6>
+                </arcticle>
+
+                <arcticle class="product-card">
+                    <img src="#" alt="Item 2">
+                    <h3>Item 2</h4>
+                    <h4><b>R$ 149,90</b></h6>
+                </arcticle>
+
+                <arcticle class="product-card">
+                    <img src="#" alt="Item 3">
+                    <h3>Item 3</h4>
+                    <h4><b>R$ 22,50</b></h6>
+                </arcticle>
+
+                <arcticle class="product-card">
+                    <img src="#" alt="Item 4">
+                    <h3>Item 4</h4>
+                    <h4><b>R$ 84,50</b></h6>
+                </arcticle>
+
+                <arcticle class="product-card">
+                    <img src="#" alt="Item 5">
+                    <h3>Item 5</h4>
+                    <h4><b>R$ 28,90</b></h6>
+                </arcticle>
+
+                <arcticle class="product-card">
+                    <img src="#" alt="Item 6">
+                    <h3>Item 6</h4>
+                    <h4><b>R$ 99,90</b></h6>
+                </arcticle>
+            </div>
+        </section>
+
+		<section class="contact" id="contact">
+			<h2>Contato</h2>
+
+			<p>Entre em contato conosco através do formulário abaixo 
+                ou pelos meios de contato listados na tabela.
+            </p>
+
+			<!-- Adicione aqui o seu formulário -->
+            <div class="formulario">
+                <form class="form">
+                    <fieldset class="campo" style="width: 50%; border: 1px solid #270b68">
+                        <legend>Nos envie uma mensagem</legend>
+                        <input type="text" placeholder="Primeiro Nome" name="firstname" id="firstname">
+                        
+                        <input type="text" placeholder="Sobrenome" name="lastname" id="lastname">
+                        
+                        <input type="tel" placeholder="Telefone Celular" name="cellphone" id="cellphone">
+                        
+                        <br>
+                        <br>
+                        
+                        <input type="email" placeholder="E-mail" name="email" id="email">
+                        
+                        <br>
+                        <br>
+
+                        <textarea type="textarea" placeholder="Escreva o assunto a ser abordado" name="textarea" id="textarea" rows="10" style="width: 100%;"></textarea>
+                        <br>
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+
+		</section>
+
+		<section>
+			<h2>Informações de Contato</h2>
+
+			<!-- Adicione aqui a sua tabela -->
+            <div class="tabela">
+                <table border="1">
+
+                    <colgroup>
+                        <col style="width: 200px">
+                        <col style="width: 200px">
+                        <col style="width: 200px">
+                    </colgroup>
+                    <thead style="text-align: center;" >
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Endereço</th>
+                    </thead>
+
+                    <tr style="text-align: center;">
+                        <td>minhaempresa@suporte.com</td>
+                        <td>(11) 94002-8922</td>
+                        <td>Rua dos Bobos Nº 0-00</td>
+                    </tr>
+                </table>
+            </div>
+		</section>
+	</main>
+
+	<footer>
+        <div class="footer">
+		    <p> &copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+        </div>
+	</footer>
+
+</body>
+</html>

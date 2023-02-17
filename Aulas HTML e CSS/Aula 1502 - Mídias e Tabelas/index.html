@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - Mídias e Tabelas</title>
+</head>
+<body>
+    <h2>Imagem</h2>
+    <figure>
+        <img src="./Images/eu-a-patroa-e-as-criancas.jpeg" alt="img1" width="500"/>
+        <figcaption>Tag para legendar imagens</figcaption>
+    </figure>
+
+    <h2>Vídeo</h2>
+    <!-- <video src="./Images/abertura-chaves.mp4" controls width="300"></video> -->
+
+    <h2>Áudio</h2>
+    <!-- <audio src="./Images/abertura-um-maluco-no-pedaco.mp3" controls type="audio/mp3"></audio> -->
+
+    <hr>
+    <h1>Tipos de listas</h1>
+
+    <h2>Listas ordenadas</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <hr>
+
+    <h2>Listas Alinhadas</h2>
+    <ul>
+        <li>Lanche 1
+            <ul>
+                <li>Hamburguer</li>
+                <li>Suco</li>
+            </ul>
+        </li>
+        <li>Lanche 2
+            <ul>
+                <li>Hamburguer</li>
+                <li>Suco</li>
+            </ul>
+        </li>
+        <li>Lanche 3
+            <ol>
+                <li>Hamburguer</li>
+                <li>Suco</li>
+            </ol>
+        </li>
+        <li>Lanche 4
+            <ol>
+                <li>Hamburguer</li>
+                <li>Suco</li>
+            </ol>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>Listas de Descrição</h2>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae voluptatem nulla inventore eaque autem qui non rerum nihil soluta, fugiat quidem aperiam nemo impedit quasi tempore eligendi magnam molestias in!
+        </dd>
+
+        <dt>CSS</dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae voluptatem nulla inventore eaque autem qui non rerum nihil soluta, fugiat quidem aperiam nemo impedit quasi tempore eligendi magnam molestias in!
+        </dd>
+
+        <dt>Javacript</dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae voluptatem nulla inventore eaque autem qui non rerum nihil soluta, fugiat quidem aperiam nemo impedit quasi tempore eligendi magnam molestias in!
+        </dd>
+    </dl>
+
+    <!-- Atributos
+        Especíicos: src, href, width, target ...
+        Globais: class e id, title
+    
+    -->
+
+    <hr>
+
+    <h2>Tabelas</h2>
+
+    <!--
+        TR : Table row
+        TD : Table data
+        TH : Table head
+
+        colspan : Mesclagem de celulas por linha
+        rowspan : Mesclagem de celulas por coluna
+
+        thead : Cabeçalho da tabela
+        tbody : Corpo da tabela
+        tfoot : Roda-pé da tabela
+
+        colgroup : Usado para aplicar estilos e efeitos em colunas
+    -->
+
+    <table border="1">
+
+        <tr>
+            <th>Área</th>
+            <th>Perímetro</th>
+            <th>Diâmetro</th>
+            <th>Circunferência</th>
+            <th>Cisalhamento</th>
+        </tr>
+        <tr>
+            <td>50 m²</td>
+            <td>150 m</td>
+            <td> 75 m</td>
+            <td>25 m</td>
+            <td>5 m</td>
+        </tr>
+
+        <tr>
+            <td colspan="5">Tipos de dados de unidades de medida</td>
+        </tr>
+    </table>
+
+    <h2>Tabela - Stop</h2>
+    <table border="3">
+        <colgroup>
+            <col style="width: 400px">
+            <col style="width: 200px">
+            <col style="width: 100px">
+            <col style="width: 50px">
+            <col style="width: 25px">
+        </colgroup>
+
+        <tr>
+            <th>Nome</th>
+            <th>CEP</th>
+            <th>MSE</th>
+            <th>Objeto</th>
+            <th>Comiha</th>
+            <th>Animal</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>Jundiaí</td>
+            <td>Justa</td>
+            <td>Jarro</td>
+            <td>Jabuticaba</td>
+            <td>Jumento</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Amanda</td>
+            <td>Amazonas</td>
+            <td>Amada</td>
+            <td>Alicate</td>
+            <td>Amora</td>
+            <td>Arara</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+</body>
+</html>

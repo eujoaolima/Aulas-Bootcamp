@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Formulários</title>
+</head>
+<body>
+    <form>
+
+        <!-- <form> : Container do Formulário -->
+        <!-- <input>, <textarea>, <select> : Campos do Formulário -->
+        <!-- <label> : Rótulo de um campo do Formulário -->
+        <!-- <fieldset> : Bordas para o formulário -->
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="Nome">
+                Name:
+            </label>
+            <input type="text" name="text" id="text" placeholder="Nome">
+            
+            <label for="Senha">
+                Senha:
+            </label>
+            <input type="password" name="password" id="password" placeholder="Senha">
+            
+            <label for="Email">
+                E-mail:
+            </label>
+            <input type="email" name="email" id="email" placeholder="Seu melhor E-mail">
+            
+            <label for="Telefone">
+                Telefone:
+            </label>
+            <input type="number" name="number" id="number" placeholder="DDD + Celular">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Um pouco sobre você</legend>
+
+            <label for="job">Escolha sua profissão</label>
+            <input type="checkbox" name="checkbox" id="checkbox">Desenvolvedor Front-end
+            <input type="checkbox" name="checkbox" id="checkbox">Desenvolvedor Back-end
+            <input type="checkbox" name="checkbox" id="checkbox">Desenvolvedor FullStack
+            
+            <br>
+            <br>
+
+            <input type="checkbox" name="checkbox" id="checkbox">Desenvolvedor Full-Cycle
+            <input type="checkbox" name="checkbox" id="checkbox">Designer UI/UX
+            <input type="checkbox" name="checkbox" id="checkbox">Cybersecurity
+            
+            <br>
+            <br>
+
+            <input type="checkbox" name="checkbox" id="checkbox">Desenvolvedor Blockchain
+            <input type="checkbox" name="checkbox" id="checkbox">Desenvolvedor Mobile
+            <input type="checkbox" name="checkbox" id="checkbox">DevOps
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="work">Há quantos anos você atua no mercado tech?</label>
+            <input type="number" name="number" id="number" min="0" max="60">
+
+            <br>
+
+            <label for="date">Coloque sua data de nascimento</label>
+            <input type="date" name="date" id="date" min="1935-01-01">
+
+            <br>
+
+            <label for="url">Insira o link do seu perfil no LinkedIn</label>
+            <input type="url" name="url" id="url">
+
+            <label for="datetime">Coloque a hora que você está preenchendo o formulário?</label>
+            <input type="datetime" name="datetime" id="datetime">
+
+            <label for="datetime-local">Coloque a data e hora de nascimento do seu filho</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local">
+
+            <label for="photo">Foto de perfil</label>
+            <input type="file" name="file" id="file" > <!-- Pode colocar o atributo "multiple" para selecionar vários arquivos -->
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>LGTV+</legend>
+            <label for="color">Qual sua cor favorita?</label>
+            <input type="color" name="color" id="color">
+
+            <label for="genero">Qual seu gênero?</label>
+            <input type="radio" name="radio" id="radio" checked>Masculino
+            <input type="radio" name="radio" id="radio">Feminino
+            <input type="radio" name="radio" id="radio">Prefiro não responder
+            <input type="radio" name="radio" id="radio">Outros
+            
+            <br>
+
+            <label for="avaliação">Avalie o nosso hotel</label>
+            1<input type="range" name="range" id="Range" min="1" max="5" list="tickmarks">5
+            
+            <br>
+
+            <label for="english">Qual seu nível de inglês?</label>
+                <select>
+                    <option value="visual" selected disabled>Selecione uma opção</option>
+                    <option value="Básico">Básico</option>
+                    <option value="Intermediário">Intermediário</option>
+                    <option value="Avançado">Avançado</option>
+                    <option value="Fluente">Fluente</option>
+                    <option value="Meme">Eu Speako very well &#128526; &#128076;</option>
+                </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Termos e condições de uso</legend>
+            <label for="TCU">Termos e Condições de Uso</label>
+            <input type="checkbox" name="checkbox" id="checkbox" required> Aceito os termos e condições de uso da plataforma
+        </fieldset>
+        <br>
+        <fieldset>
+            <h3>Nos escreva uma mensagem</h3>
+            <br>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
