@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>Aula 5 - Linkando a tag anchor aos elementos da página</title>
+
+    <style>
+
+        /* 
+            Seletor: É o nome da classe
+            Atribuição: É o que eu quero mudar na classe (cor, tamanho da fonte, sombra no texto, margem, padding...)
+            Propriedade: É o tipo de alteração que eu quero (Margin: 5px; font-size: 18px; Color: #444; ... )
+
+        */
+
+        li {
+            font-family: 'Times New Roman', Times, serif;
+            color: crimson;
+        }
+
+        a {
+            color: green;
+            text-decoration: none;
+        }
+
+        footer {
+            color: orange;
+        }
+
+        strong {
+            color:  purple;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#main-home">Home</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./imprensa.html">Imprensa</a></li>
+                <li><a href="./sobre-nos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-home">
+        <section>
+            <h1>Home</h1>
+            <h2>Subtítulo 1</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto fugit quibusdam laudantium quidem nulla libero dolor! Laboriosam aliquam doloribus, nam illum ab hic, fugiat vitae, dolores accusamus quas doloremque?
+            </p>
+
+            <h2>Subtítulo 2</h2>
+
+            <p id="paragrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto fugit quibusdam laudantium quidem nulla libero dolor! Laboriosam aliquam doloribus, nam illum ab hic, fugiat vitae, dolores accusamus quas doloremque?
+            </p>
+
+            <h2>Subtítulo 3</h2>
+
+            <p class="paragrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto fugit quibusdam laudantium quidem nulla libero dolor! Laboriosam aliquam doloribus, nam illum ab hic, fugiat vitae, dolores accusamus quas doloremque?
+            </p>
+            
+            <h2>Subtítulo 4</h2>
+
+            <img src="../../Images/aaa.png" alt="Img">
+        </section>
+    </main>
+
+    <footer>
+        <small>&copy; <strong>João Lima</strong>.Todos os direitos reservados.</small>
+    </footer>
+</body>
+</html>

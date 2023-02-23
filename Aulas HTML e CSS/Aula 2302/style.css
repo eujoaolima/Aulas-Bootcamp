@@ -1,0 +1,65 @@
+/* Tipos de Seletores */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/* Seleção Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Seleção Global */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tags */
+
+nav li {
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    font-size: 18px;
+    color: #923903;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+}
+
+h1, h2 {
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* ID's */
+
+#paragrafo {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* Class */
+
+.paragrafo {
+    font-family: 'Segoe UI', sans-serif;
+    color: #123456;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+/* Class + ID */
+
+.artigo img {
+    width: 100px;
+} 
