@@ -1,0 +1,29 @@
+/* Ordem de leitura : O Css sempre vai ler o código de cima para baixo, então a última alteração feita em um elemento é a que fica */
+
+h1 {
+    color: purple !important; /* O !important da prioridade para essa mudança */
+}
+
+h1 {
+    color: blue; /* No caso, a cor do elemento será azul e não roxa, porque foi a última alteração feita */
+}
+
+p {
+    font-size: 18px;
+    color: crimson;
+}
+
+i {
+    font-weight: 600;
+    color: orange;
+}
+
+img {
+    height: 350px;
+    width: 300px;
+}
+
+.imagem-1 img {
+    height: 500px;
+    width: 400px;
+}

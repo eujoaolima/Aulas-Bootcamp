@@ -1,0 +1,56 @@
+/*
+    Box - Model :
+
+    largura 
+    Altura 
+    Borda
+    Espaçamento interno
+    Espaçamento externo
+*/
+
+header {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #ffd700;
+    /* Pode ser escrito também da seguinte forma:
+        border-width: 2px;
+        border-color: #ffd700;
+        border-style: solid, double, none, dashed, dotted ;
+    */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+li {
+    font-size: 30px;
+    list-style: none;
+}
+
+.ball {
+    width: 100px; /* Largura do objeto */
+    height: 100px; /* Altura do objeto */
+    border: 5px solid #927e09; /* Borda do objeto */
+    border-radius: 50%;
+    background-color: #ffd700;
+
+    padding: 15px; /* Espaçamento interno do objeto */
+    margin: 32px; /* Espaçamento externo do objeto */
+}
