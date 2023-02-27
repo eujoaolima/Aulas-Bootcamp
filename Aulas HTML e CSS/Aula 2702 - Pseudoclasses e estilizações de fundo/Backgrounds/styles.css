@@ -1,0 +1,75 @@
+/*
+
+Background - Plano de fundo
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quadrado {
+    border: 15px solid #2bbb4a;
+    width: 380px;
+    height: 380px;
+    margin: 20px 0px 0px 20px;
+}
+
+.primeiro {
+    /* Aplica cor ao fundo */
+    background-color: crimson;
+}
+
+.segundo {
+
+/* 
+    background: linear-gradient(to left, #f7f00d, #1658f1, #41ea17);
+    background: linear-gradient(to right, #f7f00d, #1658f1, #41ea17);
+    background: linear-gradient(to top, #f7f00d, #1658f1, #41ea17);
+    background: linear-gradient(to bottom, #f7f00d, #1658f1, #41ea17);
+*/
+    
+    background-image: linear-gradient(45deg, #ffd700, #7aaf16);
+}
+
+.terceiro {
+    background-image: radial-gradient(crimson, rgb(255, 153, 0), #ffd700);
+}
+
+.quarto {
+    background-image: linear-gradient(45deg, #fee459 25%, #38d4239a 50%, #229199 75%);
+}
+
+.screen {
+
+/* 
+    vw -> View Width (Largura da Tela)
+    vh -> View Height (Altura da Tela)
+*/
+    margin: 20px 0px 0px 20px;
+    min-height: 100vh;
+    width: 97%;
+    height: 15vh;
+    border: 15px solid #b0cc0f;
+
+    background-image: url("./Images/plano-de-fundo.png");
+    background-repeat: repeat;
+
+    /* 
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: no-repeat;
+    */
+
+    background-size: cover; /* Ou background-size: 100% 100%; */
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}

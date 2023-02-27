@@ -1,0 +1,57 @@
+body {
+    background-color: #eeeeee;
+}
+
+a {
+    width: 150px;
+    background-color: #227f8b;
+    color: white;
+    text-decoration: none;
+    line-height: 10px;
+    font-size: 20px;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+ul {
+    list-style: none; 
+}
+
+li {
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+}
+
+h1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 40px;
+}
+
+/* Pseudo-classe */
+
+a:active {
+    background-color: crimson;
+}
+
+a:visited {
+    background-color: rgba(0, 255, 0, 0.575);
+}
+
+a:visited:hover {
+    background-color: rgba(0, 185, 0, 0.575);
+}
+
+li a:hover {
+    cursor: pointer;
+    background-color: #14474e;
+    font-weight: 700;
+    /* Transições */
+    transition-duration: .3s ease-in-out; /* Duração da transição e o estilo da transição */
+    transition-property: all; /* Define a propriedade a sofrer a transição */
+}
