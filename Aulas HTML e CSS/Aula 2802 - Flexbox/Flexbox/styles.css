@@ -1,0 +1,141 @@
+/* 
+    Flexbox: Caixa Flexível
+
+    * Container;
+    * Itens/Content;
+    * Direção;
+
+    Responsividade: Capacidade do site de se adequar a diferentes dispositivos
+*/
+
+/* 
+    Container
+    * display: flex;
+    * flex-direction
+    * justify-content
+    * align-items
+    * align-content
+    * gap
+    * flex-wrap
+
+    Items/Content
+    * flex-grow
+    * flex-shrink
+    * flex
+    * align-self
+    * order
+*/
+
+.border {
+    border: 2px solid #3ca4fa;
+    padding: 0px;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    display: flex;
+}
+
+.FS {
+    align-items: flex-start;
+}
+
+.FE {
+    align-items: flex-end;
+}
+
+.FDR {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+.FDC {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FDRR {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.FDCR {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.SE {
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.JCCAIC {
+    align-items: center;
+    justify-content: center;
+}
+
+.container-2 {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 15px;
+}
+
+.container-3 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.container-3 img {
+    /* Crescecimento flexivel */
+    flex-grow: 1;
+    /* Diminuir de forma flexivel */
+    flex-shrink: 1;
+    /* flex: 1; */
+}
+
+header {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+    border: 2px solid blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    border: 2px solid purple;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-4 {
+    width: 50%;
+    display: flex;
+}
+
+.container-4 img {
+    flex: 1;
+}
+
+#c {
+    flex: 2;
+}
+
+#t {
+    /* Indica a posição a partir da posição original */
+    order: -1;
+}

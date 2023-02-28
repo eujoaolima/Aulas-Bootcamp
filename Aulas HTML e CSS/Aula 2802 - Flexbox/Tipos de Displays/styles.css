@@ -1,0 +1,30 @@
+/* 
+    Display: é o tipo de visualização
+
+    Block: Ocupa todo o espaço da caixa
+    Inline: Ocupa o espaço em linha (um lado do outro)
+    Inline-block: Se comporta como bloco mas os elementos são dispostos um ao lado do outro
+    None: Não mostra o display na página, mas ele está lá.
+
+*/
+
+.border {
+    border: 2px solid #3ca4fa;
+    padding: 20px;
+}
+
+.bloco {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.none {
+    display: none;
+}
