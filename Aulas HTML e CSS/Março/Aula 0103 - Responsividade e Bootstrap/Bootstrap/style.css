@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg, #83c912, #ff0055, #169fb8);
+}
+
+li{
+    list-style: none;
+}
+
+header h1 {
+    color: white;
+}
+
+.buttons {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    height: 15vh;
+    background-image: linear-gradient(45deg, #ee1123, #fbff0d, #1dccc3);
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+.card img {
+    width: 320px;
+    height: 450px;
+}
+
+.carousel {
+    width: clamp(200px, 540px, 400px);
+    margin: 10px auto;
+}

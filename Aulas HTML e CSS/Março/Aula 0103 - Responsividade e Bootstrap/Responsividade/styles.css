@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+
+.main .artigo {
+    width: 300px;
+    height: 350px;
+    display: inline-block;
+    background-image: linear-gradient(45deg, rgb(63, 219, 193), #ffd700, crimson);
+    margin: 10px;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+/* Se um dispositivo tiver uma largura menor ou igual a 720px, ele vai aplicar o que estiver aqui dentro */
+@media (max-width: 720px) and (orientation: portrait) {
+    .main .artigo {
+        background-image: linear-gradient(45deg, #23c145, #5fa8ec, #833fbb);
+        width: 350px;
+        height: 375px;
+    }
+}
+
+@media (max-width: 600px) and (orientation: landscape) {
+    .main .artigo {
+        background-image: linear-gradient(45deg, #c123b4, #ec5f5f, #eeea0c);
+        width: 150px;
+        height: 175px;
+    }
+}
+
+/* Mobile First (Movel Primeiro) */
+/* Se o dispositivo tiver uma largura maior ou igual a 800px */
+@media(min-width: 800px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .main .artigo {
+        background-image: linear-gradient(45deg, #312092, #e05656, #eca219);
+        width: 450px;
+        height: 475px;
+    }
+}
+
+/* Se o dispositivo tiver uma largura maior ou igual a 1000px */
+@media(min-width: 1000px) {
+    h1 {
+        font-size: 70px;
+    }
+}
