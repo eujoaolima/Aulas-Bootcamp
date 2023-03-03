@@ -1,0 +1,13 @@
+button {
+    padding: 20px;
+    width: 100px;
+    border: 1px solid #d4d4d4;
+    background-color: #d4d4d4;
+    margin-left: 20px;
+}
+
+button:active {
+    border: 1px solid #d4d4d4;
+    box-shadow: 5px -5px 5px #6b6b6b;
+    background-color: #d4d4d4;
+}
