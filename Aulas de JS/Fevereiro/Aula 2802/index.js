@@ -116,7 +116,7 @@ console.log("----------");
 
 /*
 
-O método map cria um novo array com os resultados da aplicação de uma função a 
+O método Map cria um novo array com os resultados da aplicação de uma função a 
 cada elemento do array original. A função de mapeamento é chamada para cada elemento 
 e o valor retornado é adicionado ao novo array.
 
